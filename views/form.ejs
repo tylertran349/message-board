@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 10%;
+        text-align: center;
+        gap: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <form method="POST" action="/new">
+        <span>Write message</span>
+        <input type="text" name="authorText" placeholder="Your name" />
+        <input type="text" name="messageText" placeholder="Your message" />
+        <button>Submit</button>
+    </form>
+    <a href="/">Back to homepage</a>
+  </body>
+</html>
